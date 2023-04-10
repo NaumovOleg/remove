@@ -1,4 +1,4 @@
-export const handler = () => {
-  console.log('TEST--------------------->');
-  return null;
-};
+export const handler = () => ({
+  statusCode: 200,
+  body: 'done',
+});

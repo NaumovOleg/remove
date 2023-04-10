@@ -1,2 +1,2 @@
-export * from './creativeLibrary';
-export * from './mediaPlan';
+export * from './creative-library';
+export * from './media-plan';

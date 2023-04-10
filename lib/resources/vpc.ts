@@ -8,7 +8,7 @@ export class VpcConstruct extends Construct {
     super(scope, id);
 
     this.vpc = new ec2.Vpc(this, 'skyrise-vpc', {
-      cidr: '10.0.0.0/16',
+      ipAddresses: ec2.IpAddresses.cidr('10.0.0.0/16'),
       natGateways: 1,
       maxAzs: 3,
       subnetConfiguration: [

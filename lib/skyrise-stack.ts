@@ -1,6 +1,6 @@
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
-import { HttpApiGateway } from './resources/apiGateway';
+import { HttpApiGateway } from './resources/api-gateway';
 import { CreativeLibraryFunctionConstruct, MediaPlanFunctionConstruct } from './resources/lambda';
 import { VpcConstruct } from './resources/vpc';
 

@@ -2,6 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import { CodePipeline } from 'aws-cdk-lib/pipelines';
 import { Construct } from 'constructs';
 import { config } from 'node-config-ts';
+
 import { Stage } from './stage';
 import { SynthStep } from './synth';
 
@@ -12,7 +13,7 @@ export class ProductionPipeline extends cdk.Stack {
     const repo = cdk.aws_codecommit.Repository.fromRepositoryName(this, 'Repo', config.repositoryName);
 
     const pipeline = new CodePipeline(this, 'skyrise-pipeline-production', {
-      pipelineName: 'skyrise-pipe-production',
+      pipelineName: 'skyrise-be-production',
       selfMutation: true,
       synth: new SynthStep(repo, config.branch),
     });

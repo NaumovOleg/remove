@@ -1,9 +1,9 @@
 {
   "StackEnv": {
-    "account": "389151907894",
+    "account": "497056408170",
     "region": "eu-west-1"
   },
   "branch": "develop",
   "stage": "develop",
-  "repositoryName": "skyrise"
+  "repositoryName": "skyrise-be"
 }
