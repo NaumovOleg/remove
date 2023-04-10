@@ -1,7 +1,3 @@
-import { HttpApi } from '@aws-cdk/aws-apigatewayv2-alpha';
-import ec2 from 'aws-cdk-lib/aws-ec2';
+import { CreativeLibraryFunctionConstruct, MediaPlanFunctionConstruct } from './resources/lambda';
 
-export type LambdaResources = {
-  vpc: ec2.Vpc,
-  apiGateway: HttpApi
-};
+export type ApiHandler = CreativeLibraryFunctionConstruct | MediaPlanFunctionConstruct;
